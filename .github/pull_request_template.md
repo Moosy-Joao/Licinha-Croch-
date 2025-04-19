@@ -21,7 +21,3 @@ Instruções para testar as alterações localmente. Inclua comandos, credenciai
 - [ ] Adicionei documentação necessária (se aplicável)
 - [ ] A branch está atualizada com a `main`
 - [ ] A revisão foi solicitada a pelo menos um colaborador
-
-## Referência
-
-Issue relacionada: #NúmeroDaIssue (se houver)
