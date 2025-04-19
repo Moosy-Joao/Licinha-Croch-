@@ -1,6 +1,6 @@
-## 👥 Contribuindo
+## 👥 Como Contribuir
 
-Se você deseja contribuir com este projeto, **leia primeiro as [regras de contribuição](CONTRIBUTING.md)**.
+Se você deseja contribuir com este projeto, **leia primeiro as [regras de contribuição](./CONTRIBUTING.md)**.
 
 Lá você encontrará orientações sobre:
 - Como criar novas branches (`feature/<nome>` e `bugfix/<nome>`);
@@ -12,18 +12,18 @@ Lá você encontrará orientações sobre:
 
 # Licinha Crochê
 
-Licinha Crochê é um site institucional criado por Alice para apresentar suas criações de crochê com valor emocional e afetivo. Cada peça conta uma história pessoal, conectando o cliente com a arte de Alice.
+Licinha Crochê é um site institucional criado por Alice para apresentar suas criações artesanais de crochê, cada uma carregando valor emocional e conectando o cliente à história por trás de cada peça.
 
 ## Objetivo
-O objetivo do projeto é criar uma plataforma simples para mostrar o trabalho artesanal da Alice, destacando a história por trás de cada criação.
+O projeto busca destacar o trabalho artesanal da Alice, criando uma conexão emocional com os clientes por meio das histórias únicas de cada peça.
 
 ## Funcionalidades
-- Galeria de peças artesanais.
-- Contato direto com a artesã via WhatsApp.
-- Catálogo online.
-- Pedido de encomendas personalizadas.
+- Exibir uma galeria de peças artesanais.
+- Permitir contato direto com a artesã via WhatsApp.
+- Apresentar um catálogo online.
+- Aceitar pedidos de encomendas personalizadas.
 
 ## Requisitos
-- **Catálogo online com peças disponíveis**.
-- **Formulário de contato** para pedidos e dúvidas.
-- **Design responsivo** para dispositivos móveis e desktop.
+- **Catálogo online:** Apresentar peças disponíveis para venda.
+- **Formulário de contato:** Para pedidos e dúvidas.
+- **Design responsivo:** Compatível com dispositivos móveis e desktop.
