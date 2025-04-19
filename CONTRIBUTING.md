@@ -3,6 +3,20 @@
 Obrigado por querer contribuir! Este documento descreve as regras e fluxos de trabalho que devemos seguir para manter o repositório organizado e facilitar a colaboração.
 Siga as instruções abaixo ao contribuir com novas funcionalidades ou corrigir bugs.
 
+## Revisão de Pull Requests
+- Após criar uma Pull Request, marque um revisor.
+- Certifique-se de que a Pull Request esteja alinhada com as guidelines do projeto antes de solicitar a revisão.
+- Resolva todos os comentários antes de realizar o merge.
+
+## Testes
+- Antes de abrir uma Pull Request, certifique-se de que todos os testes passam.
+- Adicione novos testes para funcionalidades ou correções de bugs.
+
+## Boas Práticas de Código
+- Mantenha o código limpo e legível, com comentários explicativos quando necessário.
+- Siga as convenções de nomenclatura para classes, IDs e variáveis.
+- Evite duplicação de código.
+
 ## Fluxo de Trabalho com Git
 
 Para garantir um fluxo de trabalho consistente e eficaz, todos os colaboradores devem seguir as regras de nomenclatura de branches e de criação de Pull Requests descritas a seguir.
