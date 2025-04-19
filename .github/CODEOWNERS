@@ -1,1 +1,4 @@
-* @Moosy-Joao
+# Moosy é o único que pode aprovar mudanças nesses arquivos específicos
+
+/CODEOWNERS @Moosy-Joao
+/.github/pull_request_template.md @Moosy-Joao
