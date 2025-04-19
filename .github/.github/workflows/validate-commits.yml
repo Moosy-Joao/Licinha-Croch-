@@ -1,0 +1,35 @@
+name: Validate Commit Messages
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  commitlint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Get commit messages
+        run: |
+          COMMITS=$(git log origin/main..HEAD --pretty=format:"%s")
+          echo "$COMMITS" > commits.txt
+
+      - name: Validate commit messages
+        run: |
+          PATTERN="^(feat|fix|docs|style|refactor|test|chore|perf|ci|build|revert)(\\(.+\\))?: .{1,100}$"
+          FAIL=0
+          while IFS= read -r line; do
+            if ! [[ $line =~ $PATTERN ]]; then
+              echo "❌ Commit inválido: '$line'"
+              FAIL=1
+            else
+              echo "✅ Commit válido: '$line'"
+            fi
+          done < commits.txt
+          if [ $FAIL -eq 1 ]; then
+            echo "Erro: Um ou mais commits não seguem o padrão."
+            exit 1
+          fi
