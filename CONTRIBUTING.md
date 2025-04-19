@@ -16,6 +16,7 @@ Siga as instruções abaixo ao contribuir com novas funcionalidades ou corrigir 
 - Mantenha o código limpo e legível, com comentários explicativos quando necessário.
 - Siga as convenções de nomenclatura para classes, IDs e variáveis.
 - Evite duplicação de código.
+- Comentar seus codigos é essencial.
 
 ## Fluxo de Trabalho com Git
 
