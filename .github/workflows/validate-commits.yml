@@ -11,6 +11,12 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # ✅ pega o histórico completo
+
+      - name: Fetch main branch
+        run: |
+          git fetch origin main  # ✅ garante que origin/main está disponível
 
       - name: Get commit messages
         run: |
