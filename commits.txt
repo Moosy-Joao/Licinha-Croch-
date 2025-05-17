@@ -1,0 +1,2 @@
+chore(ci): update validation script
+Update validation rules

@@ -11,25 +11,28 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 # Obtém todo o histórico
 
       - name: Get commit messages
         run: |
-          COMMITS=$(git log origin/main..HEAD --pretty=format:"%s")
-          echo "$COMMITS" > commits.txt
+          git log --format="%s" origin/main..HEAD > commits.txt
 
       - name: Validate commit messages
+        id: validate
         run: |
           PATTERN="^(feat|fix|docs|style|refactor|test|chore|perf|ci|build|revert|Merge)(\\(.+\\))?:?.{0,100}$"
-          FAIL=0
           while IFS= read -r line; do
             if ! [[ $line =~ $PATTERN ]]; then
               echo "❌ Commit inválido: '$line'"
-              FAIL=1
+              exit 1
             else
               echo "✅ Commit válido: '$line'"
             fi
           done < commits.txt
-          if [ $FAIL -eq 1 ]; then
-            echo "Erro: Um ou mais commits não seguem o padrão."
-            exit 1
-          fi
+
+      - name: Aprovar PR automaticamente
+        if: success() && github.event.pull_request.user.login != 'github-actions[bot]'
+        uses: hmarr/auto-approve-action@v3
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
