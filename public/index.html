@@ -10,23 +10,39 @@
     />
     <title>Licinha Crochê</title>
   </head>
+
   <body>
+    <!-- NAVBAR -->
         <nav>
         <div class="logo">
             <img src="assets/logo.png" alt="Logo">
-            <a href="https://www.instagram.com/licinhacroche/" target="_blank">Licinha Croche</a>
+            <a href="#main" target="_blank">Licinha Croche</a>
         </div>
         <ul>
             <li><a href="#main">Inicio</a></li>
             <li><a href="#about">Sobre Mim</a></li>
-            <li><a href="#skills">Produtos</a></li>
+            <li><a href="#products">Produtos</a></li>
             <li><a href="#feedback">Feedbacks</a></li>
         </ul>
-        <button>Entre em Contato</button>
+        <button><a style="color: white;" href="https://www.instagram.com/licinhacroche/">Contato</a></button>
         <button id="menuButton" onclick="openMenu()">
             <i class='bx bx-menu'></i>
         </button>
     </nav>
+
+    <!-- Main_Info -->
+     <div class="main" id="main">
+        <div class="left">
+            <h2>Arte em Crochê</h2>
+            <p>
+              Tapetes artesanais feitos com amor e dedicação para tornar seu lar mais aconchegante.
+            </p>
+            <button><a style="color: white;" href="#products">Ver Produtos</button></a>
+        </div>
+        <div class="right">
+            <img src="assets/logo.png" alt="Desenho de Tapete">
+        </div>
+    </div>
 
 
 
@@ -39,6 +55,6 @@
 
 
     
-    <script src="style.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
