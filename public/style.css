@@ -1,3 +1,16 @@
+/* molde do código:
+    background-color: #FDDDE6; <-- cor do fundo
+    color: #F77A9D; <-- cor do texto, botão
+    border: 1px solid #F77A9D; <-- borda do botão
+    border-radius: 5px; <-- borda do botão
+    box-shadow: 0 5px 80px rgba(0, 0, 0, 0.2); <-- sombra do navbar
+    font-size: 24px; <-- tamanho da fonte
+    font-weight: bold; <-- peso da fonte
+    font-family: Dancing Script, sans-serif; <-- fonte do texto
+    */
+
+
+
 /* FONT */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
@@ -137,4 +150,92 @@ nav button #menuButton{
 .main .right img{
     width: 500px;
     border-radius: 0 100px 0 0;
+}
+
+/* Produto */
+
+    .Produto {
+    background-color: #FDDDE6;
+    padding: 70px 30px;
+    border-radius: 40px 0 40px 0;
+    margin: 60px auto;
+    max-width: 1100px;
+    box-shadow: 0 8px 40px rgba(247, 122, 157, 0.10);
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Produto .item {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 24px rgba(247, 122, 157, 0.08);
+    padding: 32px 28px;
+    flex: 1 1 280px;
+    min-width: 260px;
+    max-width: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 1px solid #F77A9D;
+    margin-bottom: 24px;
+}
+
+.Produto .item:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(247, 122, 157, 0.18);
+    border-color: #f23d71;
+}
+
+.Produto .item img {
+    width: 100%;
+    border-radius: 14px;
+    margin-bottom: 18px;
+    object-fit: cover;
+    height: 180px;
+    background: #FDDDE6;
+}
+
+.Produto .info h4 {
+    color: #F77A9D;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.Produto .info p {
+    color: #FDA1B7;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.Produto .info a {
+    color: #F77A9D;
+    font-weight: bold;
+    font-size: 17px;
+    transition: color 0.2s;
+}
+
+.Produto .info a:hover {
+    color: #f23d71;
+    text-decoration: underline;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 900px) {
+    .Produto {
+        padding: 40px 10px;
+        gap: 16px;
+    }
+    .Produto .item {
+        min-width: 220px;
+        max-width: 100%;
+        padding: 24px 12px;
+    }
+    .Produto .item img {
+        height: 140px;
+    }
 }
