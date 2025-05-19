@@ -138,3 +138,37 @@ nav button #menuButton{
     width: 500px;
     border-radius: 0 100px 0 0;
 }
+
+/* ABOUT_INFO */
+.about{
+    background-color:  #FDDDE6;
+    padding: 110px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.about .left{
+    background-color:  #FDDDE6;
+    border-radius: 10px 10px 0 0;
+}
+
+.about .left img{
+    width: 440px;
+    border-radius: 50%;
+}
+
+.about .right h2{
+    color: #F77A9D;
+}
+
+.about .right h3{
+    color: #F77A9D;
+}
+
+.about .right p{
+    color: #F77A9D;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
