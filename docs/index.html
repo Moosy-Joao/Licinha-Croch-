@@ -3,113 +3,227 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Licinha Crochê - Arte em crochê artesanal feito com amor e dedicação para tornar seu lar mais aconchegante." />
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    />
-    <title>Licinha Crochê</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <title>Licinha Crochê | Arte em Crochê Artesanal</title>
+    <link rel="icon" href="assets/logo.png" type="image/png">
   </head>
 
   <body>
     <!-- NAVBAR -->
-        <nav>
+    <header>
+      <nav id="navbar">
         <div class="logo">
-            <img src="assets/logo.png" alt="Logo">
-            <a href="#main" target="_blank">Licinha Croche</a>
+          <img src="assets/logo.png" alt="Logo Licinha Crochê">
+          <a href="#main">Licinha Crochê</a>
         </div>
-        <ul>
-            <li><a href="#main">Inicio</a></li>
-            <li><a href="#about">Sobre Mim</a></li>
-            <li><a href="#products">Produtos</a></li>
-            <li><a href="#feedback">Feedbacks</a></li>
+        <ul class="nav-links">
+          <li><a href="#main" class="nav-item">Início</a></li>
+          <li><a href="#about" class="nav-item">Sobre Mim</a></li>
+          <li><a href="#products" class="nav-item">Produtos</a></li>
+          <li><a href="#feedback" class="nav-item">Feedbacks</a></li>
         </ul>
-        <button><a style="color: white;" href="https://www.instagram.com/licinhacroche/">Contato</a></button>
-        <button id="menuButton" onclick="openMenu()">
-            <i class='bx bx-menu'></i>
+        <a href="https://www.instagram.com/licinhacroche/" class="contact-btn" target="_blank">Contato</a>
+        <button id="menuButton" class="menu-toggle" aria-label="Menu de navegação">
+          <i class="fas fa-bars"></i>
         </button>
-    </nav>
+      </nav>
+    </header>
 
-    <!-- Main_Info -->
-     <div class="main" id="main">
-        <div class="left">
-            <h2>Arte em Crochê</h2>
+    <main>
+      <!-- HERO SECTION -->
+      <section class="hero" id="main">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>Arte em Crochê</h1>
             <p>
               Tapetes artesanais feitos com amor e dedicação para tornar seu lar mais aconchegante.
             </p>
-            <button><a style="color: white;" href="#products">Ver Produtos</button></a>
+            <a href="#products" class="cta-button">Ver Produtos</a>
+          </div>
+          <div class="hero-image">
+            <div class="image-container">
+              <img src="assets/126c5cab-9ab4-469a-82ac-262088a9bc23.jpg" alt="Licinha Crochê / artesã" class="profile-image">
+            </div>
+          </div>
         </div>
-        <div class="right">
-            <img src="assets/logo.png" alt="Desenho de Tapete">
-        </div>
-    </div>
+      </section>
 
-    <!-- ABOUT -->
-    <div class="about" id="about">
-      <div class="left">
-          <img src="assets/tapete1.png" alt="Imagem de Sobre Mim">
-      </div>
-      <div class="right">
-          <h2>Sobre</h2>
-          <h3>Minha História com o Crochê</h3>
+      <!-- ABOUT SECTION -->
+      <section class="about-section" id="about">
+        <div class="about-container">
+          <div class="about-image">
+            <img src="assets/tapete1.png" alt="Tapete de crochê artesanal">
+          </div>
+          <div class="about-content">
+            <h2 class="section-title">Sobre</h2>
+            <h3 class="section-subtitle">Minha História com o Crochê</h3>
+            <p>
+              Meu nome é Alice e minha história com o crochê começou cedo: aprendi aos 7 anos, com minha mãe, em meio a linhas, agulhas e muito carinho. O que era apenas uma lembrança afetiva da infância ganhou um novo significado após a pandemia. Foi nesse período que percebi que poderia transformar essa arte em algo maior — um negócio feito de memória, afeto e criatividade.
+            </p>
+            <p>
+              Meu processo de criação é completamente emocional. Cada peça nasce de um sentimento, de uma lembrança, de histórias que carrego comigo. Quando faço crochê, olho além do trabalho: vejo momentos vividos, pessoas queridas e uma conexão com o passado que me inspira a criar com o coração.
+            </p>
+            <p>
+              Resgatar memórias através das minhas mãos é, para mim, algo simplesmente incrível.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRODUCTS SECTION -->
+      <section class="products-section" id="products">
+        <div class="section-header">
+          <h2 class="section-title">Produtos</h2>
+          <p class="section-description">Conheça algumas das minhas criações artesanais</p>
+        </div>
+
+        <div class="products-container">
+          <div class="product-card">
+            <div class="product-image">
+              <img src="assets/link1.jpg" alt="Tapete de crochê artesanal">
+            </div>
+            <div class="product-info">
+              <h3>Tapete Circular Delicado</h3>
+              <p>Peça artesanal feita com linha de algodão premium, ideal para decorar quartos e salas.</p>
+              <a href="https://www.instagram.com/reel/DIUa-xEvZV4/?igsh=eXA1Mm9xM2d4Mng0" class="instagram-link" target="_blank">
+                Ver no Instagram <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="assets/link2.jpg" alt="Tapete de crochê artesanal">
+            </div>
+            <div class="product-info">
+              <h3>Tapete Geométrico Moderno</h3>
+              <p>Combinação perfeita de tradição e modernidade, com padrões geométricos exclusivos.</p>
+              <a href="https://www.instagram.com/reel/DJY4eSnOatl/?igsh=MXV4dnVweGExYmtlcg==" class="instagram-link" target="_blank">
+                Ver no Instagram <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="assets/link3.jpg" alt="Tapete de crochê artesanal">
+            </div>
+            <div class="product-info">
+              <h3>Tapete Floral Romântico</h3>
+              <p>Inspirado na delicadeza das flores, traz aconchego e elegância para qualquer ambiente.</p>
+              <a href="https://www.instagram.com/reel/DJbc9U8OS0k/?igsh=MWc3N2FnZ2NtdnhpNw==" class="instagram-link" target="_blank">
+                Ver no Instagram <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS SECTION -->
+      <section class="testimonials-section" id="feedback">
+        <div class="section-header">
+          <h2 class="section-title">Feedbacks de Clientes</h2>
+          <p class="section-description">Veja o que nossos clientes dizem!</p>
+        </div>
+
+        <div class="testimonials-container">
+          <div class="testimonial-card">
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              O tapete ficou maravilhoso na minha sala! Trabalho impecável e entrega super rápida. Recomendo demais!
+            </p>
+            <div class="testimonial-author">
+              <img src="assets/Pessoa1.jpg" alt="Foto de Maria Fernanda">
+              <div class="author-info">
+                <h4>Maria Fernanda</h4>
+                <p>São Paulo, SP</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p class="testimonial-text">
+              Adorei o carinho nos detalhes. O crochê é lindo e veio muito bem embalado. Com certeza comprarei novamente!
+            </p>
+            <div class="testimonial-author">
+              <img src="assets/Pessoa2.jpg" alt="Foto de João Pedro">
+              <div class="author-info">
+                <h4>João Pedro</h4>
+                <p>Belo Horizonte, MG</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              Peça linda e feita com muito capricho. Atendimento excelente, super atenciosa. Recomendo!
+            </p>
+            <div class="testimonial-author">
+              <img src="assets/Pessoa3.png" alt="Foto de Larissa Souza">
+              <div class="author-info">
+                <h4>Larissa Souza</h4>
+                <p>Curitiba, PR</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-top">
+          <div class="logo">
+            <img src="assets/logo.png" alt="Logo Licinha Crochê">
+            <a href="#main">Licinha Crochê</a>
+          </div>
+          <ul class="footer-links">
+            <li><a href="#main">Início</a></li>
+            <li><a href="#about">Sobre Mim</a></li>
+            <li><a href="#products">Produtos</a></li>
+            <li><a href="#feedback">Feedbacks</a></li>
+          </ul>
+          <div class="social-links">
+            <a href="https://www.instagram.com/licinhacroche/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@licinhacroche?lang=pt-BR" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.youtube.com/@licinhacroche/featured" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="separator"></div>
+        <div class="footer-bottom">
           <p>
-            Meu nome é Alice e minha história com o crochê começou cedo: aprendi aos 7 anos, com minha mãe, em meio a linhas, agulhas e muito carinho. O que era apenas uma lembrança afetiva da infância ganhou um novo significado após a pandemia. Foi nesse período que percebi que poderia transformar essa arte em algo maior — um negócio feito de memória, afeto e criatividade.
-
-            Meu processo de criação é completamente emocional. Cada peça nasce de um sentimento, de uma lembrança, de histórias que carrego comigo. Quando faço crochê, olho além do trabalho: vejo momentos vividos, pessoas queridas e uma conexão com o passado que me inspira a criar com o coração.
-
-            Resgatar memórias através das minhas mãos é, para mim, algo simplesmente incrível.
+            Feito com <span class="heart">❤️</span> por João Marques, Matheus Alende, João Antonio.
           </p>
+          <div class="legal-links">
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Termos de Serviço</a>
+          </div>
+        </div>
       </div>
-  </div>
-
-
-
-
-     <div class="portfolio" id="portfolio">
-        <div class="header">
-            <div class="info">
-                <h1>Produtos</h1>
-                <br>
-            
-
-        <div class="Produto">
-    <div class="item">
-        <img src="assets/link1.jpg" alt="Produto Crochê 1">
-        <div class="info">
-            Detales do protudo
-            <a href="https://www.instagram.com/reel/DIUa-xEvZV4/?igsh=eXA1Mm9xM2d4Mng0">
-                Veja no Instagram <i class='bx bx-link-external'></i>
-            </a>
-        </div>
-    </div>
-    <div class="item">
-        <img src="assets/link2.jpg" alt="Produto Crochê 2">
-        <div class="info">
-            Detales do protudo
-            <a href="https://www.instagram.com/reel/DJY4eSnOatl/?igsh=MXV4dnVweGExYmtlcg==">
-                Veja no Instagram <i class='bx bx-link-external'></i>
-            </a>
-        </div>
-    </div>
-    <div class="item">
-        <img src="assets/link3.jpg" alt="Produto Crochê 3">
-        <div class="info">
-            Detales do protudo
-            <a href="https://www.instagram.com/reel/DJbc9U8OS0k/?igsh=MWc3N2FnZ2NtdnhpNw==">
-                Veja no Instagram <i class='bx bx-link-external'></i>
-            </a>
-        </div>
-    </div>
-</div>
-
-    </div>
-
-
-
-
-
-
-
+    </footer>
 
     <script src="script.js"></script>
   </body>
