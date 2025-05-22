@@ -17,6 +17,10 @@ Licinha Crochê é um site institucional criado por Alice para apresentar suas c
 ## Objetivo
 O projeto busca destacar o trabalho artesanal da Alice, criando uma conexão emocional com os clientes por meio das histórias únicas de cada peça.
 
+## Figma do Projeto
+
+<a> https://www.figma.com/proto/kRiAnDkirrUMFDocVFO6eM/Licinha-Croche?node-id=84-177&t=DYd9P7NErJgiLyMv-1 </a>
+
 ## Funcionalidades
 - Exibir uma galeria de peças artesanais.
 - Permitir contato direto com a artesã via WhatsApp.
