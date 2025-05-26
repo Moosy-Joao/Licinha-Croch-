@@ -25,11 +25,10 @@ O projeto busca destacar o trabalho artesanal da Alice, criando uma conexão emo
 - Exibir uma galeria de peças artesanais.
 - Permitir contato direto com a artesã via WhatsApp.
 - Apresentar um catálogo online.
-- Aceitar pedidos de encomendas personalizadas.
-
+  
 ## Requisitos
 - **Catálogo online:** Apresentar peças disponíveis para venda.
-- **Formulário de contato:** Para pedidos e dúvidas.
+- **Contato:** Para pedidos e dúvidas.
 - **Design responsivo:** Compatível com dispositivos móveis e desktop.
 
 ## Alunos
