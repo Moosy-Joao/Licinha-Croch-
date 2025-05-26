@@ -31,3 +31,9 @@ O projeto busca destacar o trabalho artesanal da Alice, criando uma conexão emo
 - **Catálogo online:** Apresentar peças disponíveis para venda.
 - **Formulário de contato:** Para pedidos e dúvidas.
 - **Design responsivo:** Compatível com dispositivos móveis e desktop.
+
+## Alunos
+
+- **João Pedro Pereira Marques
+- **João Antonio de Souza
+- **Matheus Alende Pires  
