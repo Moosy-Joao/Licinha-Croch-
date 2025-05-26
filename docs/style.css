@@ -690,3 +690,19 @@ footer {
     flex-direction: column;
   }
 }
+
+.menu-overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.5);
+  z-index: 999;
+  transition: opacity 0.3s;
+}
+.menu-overlay.active {
+  display: block;
+}
+body.menu-open {
+  overflow: hidden;
+}

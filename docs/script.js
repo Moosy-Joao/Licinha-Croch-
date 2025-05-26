@@ -10,10 +10,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelector('.nav-links');
     const navItems = document.querySelectorAll('.nav-item');
     const sections = document.querySelectorAll('section');
+    const overlay = document.querySelector('.menu-overlay');
     
     // Toggle do menu mobile
     menuButton.addEventListener('click', function() {
         navLinks.classList.toggle('active');
+        overlay.classList.toggle('active');
+        document.body.classList.toggle('menu-open');
         
         // Alterna o ícone do botão de menu
         const icon = menuButton.querySelector('i');
@@ -30,10 +33,19 @@ document.addEventListener('DOMContentLoaded', function() {
     navItems.forEach(item => {
         item.addEventListener('click', function() {
             navLinks.classList.remove('active');
+            overlay.classList.remove('active');
+            document.body.classList.remove('menu-open');
             const icon = menuButton.querySelector('i');
             icon.classList.remove('fa-times');
             icon.classList.add('fa-bars');
         });
+    });
+    
+    // Fecha o menu ao clicar no overlay
+    overlay.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        overlay.classList.remove('active');
+        document.body.classList.remove('menu-open');
     });
     
     // Efeito de scroll no navbar
